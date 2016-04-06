@@ -1,0 +1,6 @@
+framework module Pods_women_tech_app {
+  umbrella header "Pods-women-tech-app-umbrella.h"
+
+  export *
+  module * { export * }
+}
