@@ -17,6 +17,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var meetupResultsTableView: UITableView!
     var arrayResponse = []
+    var meetupDictionary = [String:Int]()
     var userZipCode = "12345"
 
     override func viewDidLoad() {
@@ -24,59 +25,65 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         searchBar.delegate = self
         meetupResultsTableView.delegate = self
         meetupResultsTableView.dataSource = self
+        getJSONData()
+    }
+    
 
+    
+    func getJSONData() {
+        
         Alamofire.request(.GET, "https://api.meetup.com/2/open_events.json?zip=\(userZipCode)&time=-1d,&status=past&key=\(meetupAPIKey)") .responseJSON {
             response in
             
             switch response.result {
+
                 case .Success:
                     if let value = response.result.value {
                         let json = JSON(value)
-    
                         if let meetups = json["results"].arrayObject {
-                            
                             self.arrayResponse = meetups as! [[String:AnyObject]]
-                            
-                            for i in 1...5 {
-                                if let nameOfMeetup = self.arrayResponse[i]["name"]! {
-                                    print(i, nameOfMeetup)
-                                }
-                            }
-                            
+                            self.meetupResultsTableView.reloadData()
                         } else {
                             print("Parsing error")
                         }
                     }
-                
+                    
                 case .Failure(let error):
                     print(error)
-            }
+                }
             
         }
-        
-        
     }
+    
+    
+
     
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         userZipCode = searchBar.text!
         print("User's zip code: \(searchBar.text!)")
     }
     
+
+//# MARK: - Table view methods
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("arrayresponse: \(self.arrayResponse)")
         return self.arrayResponse.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(textCellIdentifier, forIndexPath: indexPath)
-        let row = indexPath.row
-        cell.textLabel?.text = self.arrayResponse[row] as? String
+        
+        let data = self.arrayResponse[indexPath.row]
+        let meetupName = data["name"]
+        cell.textLabel?.text = meetupName as? String
+        cell.detailTextLabel?.text = "detail"
         return cell
     }
+    
 
 }
-
