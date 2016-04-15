@@ -17,7 +17,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var meetupResultsTableView: UITableView!
     var arrayResponse = []
-    var userZipCode = "12345"
+    var userZipCode = "10016"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,8 +37,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func getJSONData() {
         
-        Alamofire.request(.GET, "https://api.meetup.com/2/open_events?&sign=true&photo-host=public&zip=\(userZipCode)&text=women+in+tech&category=34&radius=20&status=upcoming&page=20&key=\(meetupAPIKey)") .responseJSON {
-            response in
+            Alamofire.request(.GET, "https://api.meetup.com/2/open_events?&sign=true&photo-host=public&zip=\(userZipCode)&text_format=plain&text=women+woman+girls+girl&category=34&page=20&desc=true&key=\(meetupAPIKey)") .responseJSON {
+                response in
             
             switch response.result {
 
@@ -47,6 +47,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                         let json = JSON(value)
                         if let meetups = json["results"].arrayObject {
                             self.arrayResponse = meetups as! [[String:AnyObject]]
+//                            print(self.arrayResponse)
                             self.meetupResultsTableView.reloadData()
                         } else {
                             print("Parsing error")
@@ -83,27 +84,35 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let data = self.arrayResponse[indexPath.row]
 
+        //meetup name
         if let meetupNameUnformatted = data["name"] as! String! {
             let meetupName = meetupNameUnformatted.capitalizedString
             cell.meetupNameLabel?.text = meetupName
         }
         
+        //organization name
         let organizationName = data["group"]!!["name"]
         cell.organizationNameLabel?.text = organizationName as? String
         
+        //date of meetup
         let formatter = NSDateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss Z"
+        formatter.dateFormat = "MM-dd-yyyyy HH:mm:ss Z"
+        formatter.dateStyle = NSDateFormatterStyle.LongStyle
+        formatter.locale = NSLocale.currentLocale()
+        formatter.timeStyle = .LongStyle
         
-        let dateOfMeetupInSeconds = data["time"] as! Double
-        let dateInNSDateFormat = NSDate(timeIntervalSince1970: dateOfMeetupInSeconds)
+        let timeAsInt = data["time"] as! Int
+        print("epoch time is: \(timeAsInt)")
         
-        let dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "EEEE, MMMM, dd, yyyy hh:mma"
-        dateFormatter.dateStyle = NSDateFormatterStyle.LongStyle
-        dateFormatter.locale = NSLocale.currentLocale()
-        let convertedDate = dateFormatter.stringFromDate(dateInNSDateFormat)
+        let timeAsInterval: NSTimeInterval = Double(timeAsInt)/10000
+        let convertedDate = NSDate(timeIntervalSinceReferenceDate:timeAsInterval)
+        print("converted date :\(convertedDate) \n")
+        
+//        let dateInNSDateFormat = NSDate(timeIntervalSinceNow: dateOfMeetupInSeconds)
+//        print("ns formatted date: \(dateInNSDateFormat) \n")
+        
+//        let convertedDate = formatter.stringFromDate(dateInNSDateFormat)
         cell.dateLabel?.text = String(convertedDate)
-        
         return cell
     }
     
