@@ -15,8 +15,9 @@
 		DB094D9B1CB5765B00ED9E84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB094D991CB5765B00ED9E84 /* LaunchScreen.storyboard */; };
 		DB094DA61CB5765B00ED9E84 /* women_tech_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB094DA51CB5765B00ED9E84 /* women_tech_appTests.swift */; };
 		DB094DB11CB5765B00ED9E84 /* women_tech_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB094DB01CB5765B00ED9E84 /* women_tech_appUITests.swift */; };
-		DBDBB4251CBE8BE8008B7C17 /* Meetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDBB4241CBE8BE8008B7C17 /* Meetup.swift */; };
-		DBDBB4271CBE90AD008B7C17 /* MeetupWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDBB4261CBE90AD008B7C17 /* MeetupWrapper.swift */; };
+		DBDBB42A1CBFE9F9008B7C17 /* MeetupCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDBB4281CBFE9F9008B7C17 /* MeetupCustomTableViewCell.swift */; };
+		DBDBB42B1CBFE9F9008B7C17 /* MeetupCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBDBB4291CBFE9F9008B7C17 /* MeetupCustomTableViewCell.xib */; };
+		DBDBB42D1CC00051008B7C17 /* ConvertTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDBB42C1CC00051008B7C17 /* ConvertTime.swift */; };
 		FCD69429E5F4E20D726EA288 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C04FF43DD1124CEBE916AEE /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,8 +57,9 @@
 		DB094DAC1CB5765B00ED9E84 /* women-tech-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "women-tech-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB094DB01CB5765B00ED9E84 /* women_tech_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = women_tech_appUITests.swift; sourceTree = "<group>"; };
 		DB094DB21CB5765B00ED9E84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DBDBB4241CBE8BE8008B7C17 /* Meetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meetup.swift; sourceTree = "<group>"; };
-		DBDBB4261CBE90AD008B7C17 /* MeetupWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupWrapper.swift; sourceTree = "<group>"; };
+		DBDBB4281CBFE9F9008B7C17 /* MeetupCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupCustomTableViewCell.swift; sourceTree = "<group>"; };
+		DBDBB4291CBFE9F9008B7C17 /* MeetupCustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeetupCustomTableViewCell.xib; sourceTree = "<group>"; };
+		DBDBB42C1CC00051008B7C17 /* ConvertTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertTime.swift; sourceTree = "<group>"; };
 		E8BFF25B6D4E050E5CDB74B0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,8 +141,9 @@
 				DB094D971CB5765B00ED9E84 /* Assets.xcassets */,
 				DB094D991CB5765B00ED9E84 /* LaunchScreen.storyboard */,
 				DB094D9C1CB5765B00ED9E84 /* Info.plist */,
-				DBDBB4241CBE8BE8008B7C17 /* Meetup.swift */,
-				DBDBB4261CBE90AD008B7C17 /* MeetupWrapper.swift */,
+				DBDBB4281CBFE9F9008B7C17 /* MeetupCustomTableViewCell.swift */,
+				DBDBB4291CBFE9F9008B7C17 /* MeetupCustomTableViewCell.xib */,
+				DBDBB42C1CC00051008B7C17 /* ConvertTime.swift */,
 			);
 			path = "women-tech-app";
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBDBB42B1CBFE9F9008B7C17 /* MeetupCustomTableViewCell.xib in Resources */,
 				DB094D9B1CB5765B00ED9E84 /* LaunchScreen.storyboard in Resources */,
 				DB094D981CB5765B00ED9E84 /* Assets.xcassets in Resources */,
 				DB094D961CB5765B00ED9E84 /* Main.storyboard in Resources */,
@@ -347,8 +351,8 @@
 			files = (
 				DB094D931CB5765B00ED9E84 /* ViewController.swift in Sources */,
 				DB094D911CB5765B00ED9E84 /* AppDelegate.swift in Sources */,
-				DBDBB4251CBE8BE8008B7C17 /* Meetup.swift in Sources */,
-				DBDBB4271CBE90AD008B7C17 /* MeetupWrapper.swift in Sources */,
+				DBDBB42D1CC00051008B7C17 /* ConvertTime.swift in Sources */,
+				DBDBB42A1CBFE9F9008B7C17 /* MeetupCustomTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
