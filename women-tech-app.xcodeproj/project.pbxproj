@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		447F7AFD7F756B534D4017C0 /* Pods_women_tech_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06162F3398C4AD01E0CA5EA4 /* Pods_women_tech_app.framework */; };
+=======
+		7ADDD3BA6EF635C761A3E80A /* Pods_women_tech_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD2D80354C5A0EB3C1E87AD /* Pods_women_tech_app.framework */; };
+>>>>>>> 4036506a6dc891229f5ed258682d7bbed4d999d8
 		DB094D911CB5765B00ED9E84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB094D901CB5765B00ED9E84 /* AppDelegate.swift */; };
 		DB094D931CB5765B00ED9E84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB094D921CB5765B00ED9E84 /* ViewController.swift */; };
 		DB094D961CB5765B00ED9E84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB094D941CB5765B00ED9E84 /* Main.storyboard */; };
@@ -18,6 +22,10 @@
 		DBDBB42A1CBFE9F9008B7C17 /* MeetupCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDBB4281CBFE9F9008B7C17 /* MeetupCustomTableViewCell.swift */; };
 		DBDBB42B1CBFE9F9008B7C17 /* MeetupCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBDBB4291CBFE9F9008B7C17 /* MeetupCustomTableViewCell.xib */; };
 		DBDBB42D1CC00051008B7C17 /* ConvertTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDBB42C1CC00051008B7C17 /* ConvertTime.swift */; };
+<<<<<<< HEAD
+=======
+		FCD69429E5F4E20D726EA288 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C04FF43DD1124CEBE916AEE /* Pods.framework */; };
+>>>>>>> 4036506a6dc891229f5ed258682d7bbed4d999d8
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +46,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		06162F3398C4AD01E0CA5EA4 /* Pods_women_tech_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_women_tech_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F1C5C0D165473327866C8BB /* Pods-women-tech-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-women-tech-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-women-tech-app/Pods-women-tech-app.release.xcconfig"; sourceTree = "<group>"; };
 		4C04FF43DD1124CEBE916AEE /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+=======
+		2CD2D80354C5A0EB3C1E87AD /* Pods_women_tech_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_women_tech_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C04FF43DD1124CEBE916AEE /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54D31BEACE89F558B1D406EC /* Pods-women-tech-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-women-tech-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-women-tech-app/Pods-women-tech-app.release.xcconfig"; sourceTree = "<group>"; };
+		65642D8759144FD2798A4E60 /* Pods-women-tech-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-women-tech-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-women-tech-app/Pods-women-tech-app.debug.xcconfig"; sourceTree = "<group>"; };
+		B1B62F49A793943A5EAFE0A4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+>>>>>>> 4036506a6dc891229f5ed258682d7bbed4d999d8
 		DB094D8D1CB5765B00ED9E84 /* women-tech-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "women-tech-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB094D901CB5765B00ED9E84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB094D921CB5765B00ED9E84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,7 +73,11 @@
 		DBDBB4281CBFE9F9008B7C17 /* MeetupCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupCustomTableViewCell.swift; sourceTree = "<group>"; };
 		DBDBB4291CBFE9F9008B7C17 /* MeetupCustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeetupCustomTableViewCell.xib; sourceTree = "<group>"; };
 		DBDBB42C1CC00051008B7C17 /* ConvertTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertTime.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		E457AA7194CEB876EC319C56 /* Pods-women-tech-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-women-tech-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-women-tech-app/Pods-women-tech-app.debug.xcconfig"; sourceTree = "<group>"; };
+=======
+		E8BFF25B6D4E050E5CDB74B0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+>>>>>>> 4036506a6dc891229f5ed258682d7bbed4d999d8
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +85,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				447F7AFD7F756B534D4017C0 /* Pods_women_tech_app.framework in Frameworks */,
+=======
+				FCD69429E5F4E20D726EA288 /* Pods.framework in Frameworks */,
+				7ADDD3BA6EF635C761A3E80A /* Pods_women_tech_app.framework in Frameworks */,
+>>>>>>> 4036506a6dc891229f5ed258682d7bbed4d999d8
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,20 +115,35 @@
 			isa = PBXGroup;
 			children = (
 				4C04FF43DD1124CEBE916AEE /* Pods.framework */,
+<<<<<<< HEAD
 				06162F3398C4AD01E0CA5EA4 /* Pods_women_tech_app.framework */,
+=======
+				2CD2D80354C5A0EB3C1E87AD /* Pods_women_tech_app.framework */,
+>>>>>>> 4036506a6dc891229f5ed258682d7bbed4d999d8
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		4F4B09E4A818B1A458BC4D4A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				E457AA7194CEB876EC319C56 /* Pods-women-tech-app.debug.xcconfig */,
 				2F1C5C0D165473327866C8BB /* Pods-women-tech-app.release.xcconfig */,
+=======
+		21DC5FDEF8752CC459EA9144 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1B62F49A793943A5EAFE0A4 /* Pods.debug.xcconfig */,
+				E8BFF25B6D4E050E5CDB74B0 /* Pods.release.xcconfig */,
+				65642D8759144FD2798A4E60 /* Pods-women-tech-app.debug.xcconfig */,
+				54D31BEACE89F558B1D406EC /* Pods-women-tech-app.release.xcconfig */,
+>>>>>>> 4036506a6dc891229f5ed258682d7bbed4d999d8
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		89D1B15F1CE408B400C577DD /* Custom Table View Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +153,8 @@
 			name = "Custom Table View Cell";
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> 4036506a6dc891229f5ed258682d7bbed4d999d8
 		DB094D841CB5765B00ED9E84 = {
 			isa = PBXGroup;
 			children = (
@@ -120,8 +162,13 @@
 				DB094DA41CB5765B00ED9E84 /* women-tech-appTests */,
 				DB094DAF1CB5765B00ED9E84 /* women-tech-appUITests */,
 				DB094D8E1CB5765B00ED9E84 /* Products */,
+<<<<<<< HEAD
 				0AE27442A8C251C8C07795A6 /* Frameworks */,
 				4F4B09E4A818B1A458BC4D4A /* Pods */,
+=======
+				21DC5FDEF8752CC459EA9144 /* Pods */,
+				0AE27442A8C251C8C07795A6 /* Frameworks */,
+>>>>>>> 4036506a6dc891229f5ed258682d7bbed4d999d8
 			);
 			sourceTree = "<group>";
 		};
@@ -144,7 +191,12 @@
 				DB094D971CB5765B00ED9E84 /* Assets.xcassets */,
 				DB094D991CB5765B00ED9E84 /* LaunchScreen.storyboard */,
 				DB094D9C1CB5765B00ED9E84 /* Info.plist */,
+<<<<<<< HEAD
 				89D1B15F1CE408B400C577DD /* Custom Table View Cell */,
+=======
+				DBDBB4281CBFE9F9008B7C17 /* MeetupCustomTableViewCell.swift */,
+				DBDBB4291CBFE9F9008B7C17 /* MeetupCustomTableViewCell.xib */,
+>>>>>>> 4036506a6dc891229f5ed258682d7bbed4d999d8
 				DBDBB42C1CC00051008B7C17 /* ConvertTime.swift */,
 			);
 			path = "women-tech-app";
@@ -175,12 +227,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB094DB51CB5765B00ED9E84 /* Build configuration list for PBXNativeTarget "women-tech-app" */;
 			buildPhases = (
+<<<<<<< HEAD
 				39498D9C35A06D70C0132ADB /* Check Pods Manifest.lock */,
 				DB094D891CB5765B00ED9E84 /* Sources */,
 				DB094D8A1CB5765B00ED9E84 /* Frameworks */,
 				DB094D8B1CB5765B00ED9E84 /* Resources */,
 				F0E6279D790E8A06C686C77E /* Embed Pods Frameworks */,
 				2EC0F81383374556607F66A6 /* Copy Pods Resources */,
+=======
+				DD9B4B7F65ADA9DBD495C70A /* Check Pods Manifest.lock */,
+				DB094D891CB5765B00ED9E84 /* Sources */,
+				DB094D8A1CB5765B00ED9E84 /* Frameworks */,
+				DB094D8B1CB5765B00ED9E84 /* Resources */,
+				571E8C44215EBDEBD7AE68DA /* Embed Pods Frameworks */,
+				077A4CF9E2A0F00D936E1522 /* Copy Pods Resources */,
+>>>>>>> 4036506a6dc891229f5ed258682d7bbed4d999d8
 			);
 			buildRules = (
 			);
@@ -299,7 +360,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+<<<<<<< HEAD
 		2EC0F81383374556607F66A6 /* Copy Pods Resources */ = {
+=======
+		077A4CF9E2A0F00D936E1522 /* Copy Pods Resources */ = {
+>>>>>>> 4036506a6dc891229f5ed258682d7bbed4d999d8
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -314,34 +379,57 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-women-tech-app/Pods-women-tech-app-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+<<<<<<< HEAD
 		39498D9C35A06D70C0132ADB /* Check Pods Manifest.lock */ = {
+=======
+		571E8C44215EBDEBD7AE68DA /* Embed Pods Frameworks */ = {
+>>>>>>> 4036506a6dc891229f5ed258682d7bbed4d999d8
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+<<<<<<< HEAD
 			name = "Check Pods Manifest.lock";
+=======
+			name = "Embed Pods Frameworks";
+>>>>>>> 4036506a6dc891229f5ed258682d7bbed4d999d8
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
+<<<<<<< HEAD
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		F0E6279D790E8A06C686C77E /* Embed Pods Frameworks */ = {
+=======
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-women-tech-app/Pods-women-tech-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD9B4B7F65ADA9DBD495C70A /* Check Pods Manifest.lock */ = {
+>>>>>>> 4036506a6dc891229f5ed258682d7bbed4d999d8
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+<<<<<<< HEAD
 			name = "Embed Pods Frameworks";
+=======
+			name = "Check Pods Manifest.lock";
+>>>>>>> 4036506a6dc891229f5ed258682d7bbed4d999d8
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
+<<<<<<< HEAD
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-women-tech-app/Pods-women-tech-app-frameworks.sh\"\n";
+=======
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+>>>>>>> 4036506a6dc891229f5ed258682d7bbed4d999d8
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -492,7 +580,11 @@
 		};
 		DB094DB61CB5765B00ED9E84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+<<<<<<< HEAD
 			baseConfigurationReference = E457AA7194CEB876EC319C56 /* Pods-women-tech-app.debug.xcconfig */;
+=======
+			baseConfigurationReference = 65642D8759144FD2798A4E60 /* Pods-women-tech-app.debug.xcconfig */;
+>>>>>>> 4036506a6dc891229f5ed258682d7bbed4d999d8
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "women-tech-app/Info.plist";
@@ -504,7 +596,11 @@
 		};
 		DB094DB71CB5765B00ED9E84 /* Release */ = {
 			isa = XCBuildConfiguration;
+<<<<<<< HEAD
 			baseConfigurationReference = 2F1C5C0D165473327866C8BB /* Pods-women-tech-app.release.xcconfig */;
+=======
+			baseConfigurationReference = 54D31BEACE89F558B1D406EC /* Pods-women-tech-app.release.xcconfig */;
+>>>>>>> 4036506a6dc891229f5ed258682d7bbed4d999d8
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "women-tech-app/Info.plist";
