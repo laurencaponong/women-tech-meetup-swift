@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Fp9-Nr-hbs">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="women_tech_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Zip Code" translatesAutoresizingMaskIntoConstraints="NO" id="16N-zu-uHh">
+                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="193" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3XC-7Y-1Up">
+                                <rect key="frame" x="0.0" y="108" width="600" height="492"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="1" green="0.965760324" blue="0.74337790839999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellIdentifier" rowHeight="300" id="jo7-hr-vdP" customClass="MeetupCustomTableViewCell" customModule="women_tech_app" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jo7-hr-vdP" id="dkV-Vm-fio">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="299"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="xUv-jE-JjD"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="w1v-HT-lrO"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="16N-zu-uHh" secondAttribute="trailing" id="D3i-IX-jaK"/>
+                            <constraint firstItem="3XC-7Y-1Up" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="H8C-db-wHd"/>
+                            <constraint firstAttribute="trailing" secondItem="3XC-7Y-1Up" secondAttribute="trailing" id="OVD-w5-slK"/>
+                            <constraint firstItem="3XC-7Y-1Up" firstAttribute="top" secondItem="16N-zu-uHh" secondAttribute="bottom" id="X8k-3I-V9z"/>
+                            <constraint firstItem="16N-zu-uHh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="djF-hG-TWC"/>
+                            <constraint firstAttribute="bottom" secondItem="3XC-7Y-1Up" secondAttribute="bottom" id="t37-fj-ijl"/>
+                            <constraint firstItem="16N-zu-uHh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="viw-3u-yqS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FIJ-aX-QOK"/>
+                    <connections>
+                        <outlet property="meetupResultsTableView" destination="3XC-7Y-1Up" id="A3D-m2-AOT"/>
+                        <outlet property="searchBar" destination="16N-zu-uHh" id="tci-Sb-cML"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064" y="171"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Z2f-VP-hku">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fp9-Nr-hbs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ylM-ha-PNe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mBW-xs-Ns3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O7W-Ou-N2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="426" y="171"/>
+        </scene>
+    </scenes>
+</document>
