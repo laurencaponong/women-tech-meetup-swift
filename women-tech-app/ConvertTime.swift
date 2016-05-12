@@ -8,20 +8,6 @@
 
 import Foundation
 
-//extension NSDate {
-//    
-//    func convertToString() -> String {
-//        let dateFormatter = NSDateFormatter()
-//        dateFormatter.locale = NSLocale.currentLocale()
-//        dateFormatter.dateFormat = "EEEE, MMMM, dd, yyyy hh:mma"
-//        
-//        let dateString = dateFormatter.stringFromDate(self)
-//        
-//        return dateString
-//    }
-//    
-//}
-
 extension Double {
     
     func convertFromSecsToDate(seconds:Double) -> NSDate {

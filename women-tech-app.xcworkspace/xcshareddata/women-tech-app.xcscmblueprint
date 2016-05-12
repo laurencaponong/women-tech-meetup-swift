@@ -1,21 +1,28 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BD53798B406915B9E02D0BF82F4FD4B12305F3DE",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1231826278BE561A99DA4BC2D5E06642CA65AE24",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "BD53798B406915B9E02D0BF82F4FD4B12305F3DE" : 0,
-    "BC82D5DC20757B4799106BB6F335FEB91C2787E9" : 0
+    "1231826278BE561A99DA4BC2D5E06642CA65AE24" : 0,
+    "BC82D5DC20757B4799106BB6F335FEB91C2787E9" : 0,
+    "BD53798B406915B9E02D0BF82F4FD4B12305F3DE" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0208E313-3E74-4F5C-A86C-B0FA317706CF",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "BD53798B406915B9E02D0BF82F4FD4B12305F3DE" : "women-tech-app\/",
-    "BC82D5DC20757B4799106BB6F335FEB91C2787E9" : ""
+    "1231826278BE561A99DA4BC2D5E06642CA65AE24" : "women-tech-meetup-swift-master\/",
+    "BC82D5DC20757B4799106BB6F335FEB91C2787E9" : "",
+    "BD53798B406915B9E02D0BF82F4FD4B12305F3DE" : "women-tech-app\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "women-tech-app",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "women-tech-app.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/laurencaponong\/women-tech-meetup-swift",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1231826278BE561A99DA4BC2D5E06642CA65AE24"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/laurencaponong\/meetup-swift.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",

@@ -1,1203 +1,607 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>06162F3398C4AD01E0CA5EA4</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_women_tech_app.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>0AE27442A8C251C8C07795A6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>4C04FF43DD1124CEBE916AEE</string>
-				<string>06162F3398C4AD01E0CA5EA4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2EC0F81383374556607F66A6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-women-tech-app/Pods-women-tech-app-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>2F1C5C0D165473327866C8BB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-women-tech-app.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-women-tech-app/Pods-women-tech-app.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>39498D9C35A06D70C0132ADB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>447F7AFD7F756B534D4017C0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>06162F3398C4AD01E0CA5EA4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4C04FF43DD1124CEBE916AEE</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>4F4B09E4A818B1A458BC4D4A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E457AA7194CEB876EC319C56</string>
-				<string>2F1C5C0D165473327866C8BB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DB094D841CB5765B00ED9E84</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DB094D8F1CB5765B00ED9E84</string>
-				<string>DB094DA41CB5765B00ED9E84</string>
-				<string>DB094DAF1CB5765B00ED9E84</string>
-				<string>DB094D8E1CB5765B00ED9E84</string>
-				<string>0AE27442A8C251C8C07795A6</string>
-				<string>4F4B09E4A818B1A458BC4D4A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DB094D851CB5765B00ED9E84</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0720</string>
-				<key>LastUpgradeCheck</key>
-				<string>0720</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Caponong, Lauren</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>DB094D8C1CB5765B00ED9E84</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.2.1</string>
-					</dict>
-					<key>DB094DA01CB5765B00ED9E84</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.2.1</string>
-						<key>TestTargetID</key>
-						<string>DB094D8C1CB5765B00ED9E84</string>
-					</dict>
-					<key>DB094DAB1CB5765B00ED9E84</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.2.1</string>
-						<key>TestTargetID</key>
-						<string>DB094D8C1CB5765B00ED9E84</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>DB094D881CB5765B00ED9E84</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>DB094D841CB5765B00ED9E84</string>
-			<key>productRefGroup</key>
-			<string>DB094D8E1CB5765B00ED9E84</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>DB094D8C1CB5765B00ED9E84</string>
-				<string>DB094DA01CB5765B00ED9E84</string>
-				<string>DB094DAB1CB5765B00ED9E84</string>
-			</array>
-		</dict>
-		<key>DB094D881CB5765B00ED9E84</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>DB094DB31CB5765B00ED9E84</string>
-				<string>DB094DB41CB5765B00ED9E84</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>DB094D891CB5765B00ED9E84</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>DB094D931CB5765B00ED9E84</string>
-				<string>DB094D911CB5765B00ED9E84</string>
-				<string>DBDBB42D1CC00051008B7C17</string>
-				<string>DBDBB42A1CBFE9F9008B7C17</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>DB094D8A1CB5765B00ED9E84</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>447F7AFD7F756B534D4017C0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>DB094D8B1CB5765B00ED9E84</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>DBDBB42B1CBFE9F9008B7C17</string>
-				<string>DB094D9B1CB5765B00ED9E84</string>
-				<string>DB094D981CB5765B00ED9E84</string>
-				<string>DB094D961CB5765B00ED9E84</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>DB094D8C1CB5765B00ED9E84</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>DB094DB51CB5765B00ED9E84</string>
-			<key>buildPhases</key>
-			<array>
-				<string>39498D9C35A06D70C0132ADB</string>
-				<string>DB094D891CB5765B00ED9E84</string>
-				<string>DB094D8A1CB5765B00ED9E84</string>
-				<string>DB094D8B1CB5765B00ED9E84</string>
-				<string>F0E6279D790E8A06C686C77E</string>
-				<string>2EC0F81383374556607F66A6</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>women-tech-app</string>
-			<key>productName</key>
-			<string>women-tech-app</string>
-			<key>productReference</key>
-			<string>DB094D8D1CB5765B00ED9E84</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>DB094D8D1CB5765B00ED9E84</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>women-tech-app.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>DB094D8E1CB5765B00ED9E84</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DB094D8D1CB5765B00ED9E84</string>
-				<string>DB094DA11CB5765B00ED9E84</string>
-				<string>DB094DAC1CB5765B00ED9E84</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DB094D8F1CB5765B00ED9E84</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DB094D901CB5765B00ED9E84</string>
-				<string>DB094D921CB5765B00ED9E84</string>
-				<string>DB094D941CB5765B00ED9E84</string>
-				<string>DB094D971CB5765B00ED9E84</string>
-				<string>DB094D991CB5765B00ED9E84</string>
-				<string>DB094D9C1CB5765B00ED9E84</string>
-				<string>DBDBB4281CBFE9F9008B7C17</string>
-				<string>DBDBB4291CBFE9F9008B7C17</string>
-				<string>DBDBB42C1CC00051008B7C17</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>women-tech-app</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DB094D901CB5765B00ED9E84</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DB094D911CB5765B00ED9E84</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DB094D901CB5765B00ED9E84</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DB094D921CB5765B00ED9E84</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DB094D931CB5765B00ED9E84</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DB094D921CB5765B00ED9E84</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DB094D941CB5765B00ED9E84</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DB094D951CB5765B00ED9E84</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DB094D951CB5765B00ED9E84</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DB094D961CB5765B00ED9E84</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DB094D941CB5765B00ED9E84</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DB094D971CB5765B00ED9E84</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DB094D981CB5765B00ED9E84</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DB094D971CB5765B00ED9E84</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DB094D991CB5765B00ED9E84</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DB094D9A1CB5765B00ED9E84</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DB094D9A1CB5765B00ED9E84</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DB094D9B1CB5765B00ED9E84</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DB094D991CB5765B00ED9E84</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DB094D9C1CB5765B00ED9E84</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DB094D9D1CB5765B00ED9E84</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>DB094DA61CB5765B00ED9E84</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>DB094D9E1CB5765B00ED9E84</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>DB094D9F1CB5765B00ED9E84</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>DB094DA01CB5765B00ED9E84</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>DB094DB81CB5765B00ED9E84</string>
-			<key>buildPhases</key>
-			<array>
-				<string>DB094D9D1CB5765B00ED9E84</string>
-				<string>DB094D9E1CB5765B00ED9E84</string>
-				<string>DB094D9F1CB5765B00ED9E84</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>DB094DA31CB5765B00ED9E84</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>women-tech-appTests</string>
-			<key>productName</key>
-			<string>women-tech-appTests</string>
-			<key>productReference</key>
-			<string>DB094DA11CB5765B00ED9E84</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>DB094DA11CB5765B00ED9E84</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>women-tech-appTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>DB094DA21CB5765B00ED9E84</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>DB094D851CB5765B00ED9E84</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>DB094D8C1CB5765B00ED9E84</string>
-			<key>remoteInfo</key>
-			<string>women-tech-app</string>
-		</dict>
-		<key>DB094DA31CB5765B00ED9E84</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>DB094D8C1CB5765B00ED9E84</string>
-			<key>targetProxy</key>
-			<string>DB094DA21CB5765B00ED9E84</string>
-		</dict>
-		<key>DB094DA41CB5765B00ED9E84</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DB094DA51CB5765B00ED9E84</string>
-				<string>DB094DA71CB5765B00ED9E84</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>women-tech-appTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DB094DA51CB5765B00ED9E84</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>women_tech_appTests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DB094DA61CB5765B00ED9E84</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DB094DA51CB5765B00ED9E84</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DB094DA71CB5765B00ED9E84</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DB094DA81CB5765B00ED9E84</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>DB094DB11CB5765B00ED9E84</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>DB094DA91CB5765B00ED9E84</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>DB094DAA1CB5765B00ED9E84</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>DB094DAB1CB5765B00ED9E84</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>DB094DBB1CB5765B00ED9E84</string>
-			<key>buildPhases</key>
-			<array>
-				<string>DB094DA81CB5765B00ED9E84</string>
-				<string>DB094DA91CB5765B00ED9E84</string>
-				<string>DB094DAA1CB5765B00ED9E84</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>DB094DAE1CB5765B00ED9E84</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>women-tech-appUITests</string>
-			<key>productName</key>
-			<string>women-tech-appUITests</string>
-			<key>productReference</key>
-			<string>DB094DAC1CB5765B00ED9E84</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.ui-testing</string>
-		</dict>
-		<key>DB094DAC1CB5765B00ED9E84</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>women-tech-appUITests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>DB094DAD1CB5765B00ED9E84</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>DB094D851CB5765B00ED9E84</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>DB094D8C1CB5765B00ED9E84</string>
-			<key>remoteInfo</key>
-			<string>women-tech-app</string>
-		</dict>
-		<key>DB094DAE1CB5765B00ED9E84</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>DB094D8C1CB5765B00ED9E84</string>
-			<key>targetProxy</key>
-			<string>DB094DAD1CB5765B00ED9E84</string>
-		</dict>
-		<key>DB094DAF1CB5765B00ED9E84</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DB094DB01CB5765B00ED9E84</string>
-				<string>DB094DB21CB5765B00ED9E84</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>women-tech-appUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DB094DB01CB5765B00ED9E84</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>women_tech_appUITests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DB094DB11CB5765B00ED9E84</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DB094DB01CB5765B00ED9E84</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DB094DB21CB5765B00ED9E84</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DB094DB31CB5765B00ED9E84</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.2</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>DB094DB41CB5765B00ED9E84</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.2</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>DB094DB51CB5765B00ED9E84</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>DB094DB61CB5765B00ED9E84</string>
-				<string>DB094DB71CB5765B00ED9E84</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>DB094DB61CB5765B00ED9E84</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>E457AA7194CEB876EC319C56</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>women-tech-app/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.laurencaponong.women-tech-app</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>DB094DB71CB5765B00ED9E84</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>2F1C5C0D165473327866C8BB</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>women-tech-app/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.laurencaponong.women-tech-app</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>DB094DB81CB5765B00ED9E84</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>DB094DB91CB5765B00ED9E84</string>
-				<string>DB094DBA1CB5765B00ED9E84</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>DB094DB91CB5765B00ED9E84</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>women-tech-appTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.laurencaponong.women-tech-appTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/women-tech-app.app/women-tech-app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>DB094DBA1CB5765B00ED9E84</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>women-tech-appTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.laurencaponong.women-tech-appTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/women-tech-app.app/women-tech-app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>DB094DBB1CB5765B00ED9E84</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>DB094DBC1CB5765B00ED9E84</string>
-				<string>DB094DBD1CB5765B00ED9E84</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>DB094DBC1CB5765B00ED9E84</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>women-tech-appUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.laurencaponong.women-tech-appUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>women-tech-app</string>
-				<key>USES_XCTRUNNER</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>DB094DBD1CB5765B00ED9E84</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>women-tech-appUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.laurencaponong.women-tech-appUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>women-tech-app</string>
-				<key>USES_XCTRUNNER</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>DBDBB4281CBFE9F9008B7C17</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MeetupCustomTableViewCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DBDBB4291CBFE9F9008B7C17</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>MeetupCustomTableViewCell.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DBDBB42A1CBFE9F9008B7C17</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DBDBB4281CBFE9F9008B7C17</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DBDBB42B1CBFE9F9008B7C17</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DBDBB4291CBFE9F9008B7C17</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DBDBB42C1CC00051008B7C17</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ConvertTime.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DBDBB42D1CC00051008B7C17</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DBDBB42C1CC00051008B7C17</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E457AA7194CEB876EC319C56</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-women-tech-app.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-women-tech-app/Pods-women-tech-app.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F0E6279D790E8A06C686C77E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-women-tech-app/Pods-women-tech-app-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>DB094D851CB5765B00ED9E84</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		447F7AFD7F756B534D4017C0 /* Pods_women_tech_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06162F3398C4AD01E0CA5EA4 /* Pods_women_tech_app.framework */; };
+		DB094D911CB5765B00ED9E84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB094D901CB5765B00ED9E84 /* AppDelegate.swift */; };
+		DB094D931CB5765B00ED9E84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB094D921CB5765B00ED9E84 /* ViewController.swift */; };
+		DB094D961CB5765B00ED9E84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB094D941CB5765B00ED9E84 /* Main.storyboard */; };
+		DB094D981CB5765B00ED9E84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB094D971CB5765B00ED9E84 /* Assets.xcassets */; };
+		DB094D9B1CB5765B00ED9E84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB094D991CB5765B00ED9E84 /* LaunchScreen.storyboard */; };
+		DB094DA61CB5765B00ED9E84 /* women_tech_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB094DA51CB5765B00ED9E84 /* women_tech_appTests.swift */; };
+		DB094DB11CB5765B00ED9E84 /* women_tech_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB094DB01CB5765B00ED9E84 /* women_tech_appUITests.swift */; };
+		DBDBB42A1CBFE9F9008B7C17 /* MeetupCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDBB4281CBFE9F9008B7C17 /* MeetupCustomTableViewCell.swift */; };
+		DBDBB42B1CBFE9F9008B7C17 /* MeetupCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBDBB4291CBFE9F9008B7C17 /* MeetupCustomTableViewCell.xib */; };
+		DBDBB42D1CC00051008B7C17 /* ConvertTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDBB42C1CC00051008B7C17 /* ConvertTime.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB094DA21CB5765B00ED9E84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB094D851CB5765B00ED9E84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB094D8C1CB5765B00ED9E84;
+			remoteInfo = "women-tech-app";
+		};
+		DB094DAD1CB5765B00ED9E84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB094D851CB5765B00ED9E84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB094D8C1CB5765B00ED9E84;
+			remoteInfo = "women-tech-app";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06162F3398C4AD01E0CA5EA4 /* Pods_women_tech_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_women_tech_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F1C5C0D165473327866C8BB /* Pods-women-tech-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-women-tech-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-women-tech-app/Pods-women-tech-app.release.xcconfig"; sourceTree = "<group>"; };
+		4C04FF43DD1124CEBE916AEE /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB094D8D1CB5765B00ED9E84 /* women-tech-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "women-tech-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB094D901CB5765B00ED9E84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB094D921CB5765B00ED9E84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB094D951CB5765B00ED9E84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB094D971CB5765B00ED9E84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB094D9A1CB5765B00ED9E84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB094D9C1CB5765B00ED9E84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB094DA11CB5765B00ED9E84 /* women-tech-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "women-tech-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB094DA51CB5765B00ED9E84 /* women_tech_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = women_tech_appTests.swift; sourceTree = "<group>"; };
+		DB094DA71CB5765B00ED9E84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB094DAC1CB5765B00ED9E84 /* women-tech-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "women-tech-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB094DB01CB5765B00ED9E84 /* women_tech_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = women_tech_appUITests.swift; sourceTree = "<group>"; };
+		DB094DB21CB5765B00ED9E84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBDBB4281CBFE9F9008B7C17 /* MeetupCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupCustomTableViewCell.swift; sourceTree = "<group>"; };
+		DBDBB4291CBFE9F9008B7C17 /* MeetupCustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeetupCustomTableViewCell.xib; sourceTree = "<group>"; };
+		DBDBB42C1CC00051008B7C17 /* ConvertTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertTime.swift; sourceTree = "<group>"; };
+		E457AA7194CEB876EC319C56 /* Pods-women-tech-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-women-tech-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-women-tech-app/Pods-women-tech-app.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB094D8A1CB5765B00ED9E84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				447F7AFD7F756B534D4017C0 /* Pods_women_tech_app.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB094D9E1CB5765B00ED9E84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB094DA91CB5765B00ED9E84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AE27442A8C251C8C07795A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C04FF43DD1124CEBE916AEE /* Pods.framework */,
+				06162F3398C4AD01E0CA5EA4 /* Pods_women_tech_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F4B09E4A818B1A458BC4D4A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E457AA7194CEB876EC319C56 /* Pods-women-tech-app.debug.xcconfig */,
+				2F1C5C0D165473327866C8BB /* Pods-women-tech-app.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		89D1B15F1CE408B400C577DD /* Custom Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DBDBB4281CBFE9F9008B7C17 /* MeetupCustomTableViewCell.swift */,
+				DBDBB4291CBFE9F9008B7C17 /* MeetupCustomTableViewCell.xib */,
+			);
+			name = "Custom Table View Cell";
+			sourceTree = "<group>";
+		};
+		DB094D841CB5765B00ED9E84 = {
+			isa = PBXGroup;
+			children = (
+				DB094D8F1CB5765B00ED9E84 /* women-tech-app */,
+				DB094DA41CB5765B00ED9E84 /* women-tech-appTests */,
+				DB094DAF1CB5765B00ED9E84 /* women-tech-appUITests */,
+				DB094D8E1CB5765B00ED9E84 /* Products */,
+				0AE27442A8C251C8C07795A6 /* Frameworks */,
+				4F4B09E4A818B1A458BC4D4A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		DB094D8E1CB5765B00ED9E84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB094D8D1CB5765B00ED9E84 /* women-tech-app.app */,
+				DB094DA11CB5765B00ED9E84 /* women-tech-appTests.xctest */,
+				DB094DAC1CB5765B00ED9E84 /* women-tech-appUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB094D8F1CB5765B00ED9E84 /* women-tech-app */ = {
+			isa = PBXGroup;
+			children = (
+				DB094D901CB5765B00ED9E84 /* AppDelegate.swift */,
+				DB094D921CB5765B00ED9E84 /* ViewController.swift */,
+				DB094D941CB5765B00ED9E84 /* Main.storyboard */,
+				DB094D971CB5765B00ED9E84 /* Assets.xcassets */,
+				DB094D991CB5765B00ED9E84 /* LaunchScreen.storyboard */,
+				DB094D9C1CB5765B00ED9E84 /* Info.plist */,
+				89D1B15F1CE408B400C577DD /* Custom Table View Cell */,
+				DBDBB42C1CC00051008B7C17 /* ConvertTime.swift */,
+			);
+			path = "women-tech-app";
+			sourceTree = "<group>";
+		};
+		DB094DA41CB5765B00ED9E84 /* women-tech-appTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB094DA51CB5765B00ED9E84 /* women_tech_appTests.swift */,
+				DB094DA71CB5765B00ED9E84 /* Info.plist */,
+			);
+			path = "women-tech-appTests";
+			sourceTree = "<group>";
+		};
+		DB094DAF1CB5765B00ED9E84 /* women-tech-appUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DB094DB01CB5765B00ED9E84 /* women_tech_appUITests.swift */,
+				DB094DB21CB5765B00ED9E84 /* Info.plist */,
+			);
+			path = "women-tech-appUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB094D8C1CB5765B00ED9E84 /* women-tech-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB094DB51CB5765B00ED9E84 /* Build configuration list for PBXNativeTarget "women-tech-app" */;
+			buildPhases = (
+				39498D9C35A06D70C0132ADB /* Check Pods Manifest.lock */,
+				DB094D891CB5765B00ED9E84 /* Sources */,
+				DB094D8A1CB5765B00ED9E84 /* Frameworks */,
+				DB094D8B1CB5765B00ED9E84 /* Resources */,
+				F0E6279D790E8A06C686C77E /* Embed Pods Frameworks */,
+				2EC0F81383374556607F66A6 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "women-tech-app";
+			productName = "women-tech-app";
+			productReference = DB094D8D1CB5765B00ED9E84 /* women-tech-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB094DA01CB5765B00ED9E84 /* women-tech-appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB094DB81CB5765B00ED9E84 /* Build configuration list for PBXNativeTarget "women-tech-appTests" */;
+			buildPhases = (
+				DB094D9D1CB5765B00ED9E84 /* Sources */,
+				DB094D9E1CB5765B00ED9E84 /* Frameworks */,
+				DB094D9F1CB5765B00ED9E84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB094DA31CB5765B00ED9E84 /* PBXTargetDependency */,
+			);
+			name = "women-tech-appTests";
+			productName = "women-tech-appTests";
+			productReference = DB094DA11CB5765B00ED9E84 /* women-tech-appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB094DAB1CB5765B00ED9E84 /* women-tech-appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB094DBB1CB5765B00ED9E84 /* Build configuration list for PBXNativeTarget "women-tech-appUITests" */;
+			buildPhases = (
+				DB094DA81CB5765B00ED9E84 /* Sources */,
+				DB094DA91CB5765B00ED9E84 /* Frameworks */,
+				DB094DAA1CB5765B00ED9E84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB094DAE1CB5765B00ED9E84 /* PBXTargetDependency */,
+			);
+			name = "women-tech-appUITests";
+			productName = "women-tech-appUITests";
+			productReference = DB094DAC1CB5765B00ED9E84 /* women-tech-appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB094D851CB5765B00ED9E84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Caponong, Lauren";
+				TargetAttributes = {
+					DB094D8C1CB5765B00ED9E84 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					DB094DA01CB5765B00ED9E84 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = DB094D8C1CB5765B00ED9E84;
+					};
+					DB094DAB1CB5765B00ED9E84 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = DB094D8C1CB5765B00ED9E84;
+					};
+				};
+			};
+			buildConfigurationList = DB094D881CB5765B00ED9E84 /* Build configuration list for PBXProject "women-tech-app" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB094D841CB5765B00ED9E84;
+			productRefGroup = DB094D8E1CB5765B00ED9E84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB094D8C1CB5765B00ED9E84 /* women-tech-app */,
+				DB094DA01CB5765B00ED9E84 /* women-tech-appTests */,
+				DB094DAB1CB5765B00ED9E84 /* women-tech-appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB094D8B1CB5765B00ED9E84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBDBB42B1CBFE9F9008B7C17 /* MeetupCustomTableViewCell.xib in Resources */,
+				DB094D9B1CB5765B00ED9E84 /* LaunchScreen.storyboard in Resources */,
+				DB094D981CB5765B00ED9E84 /* Assets.xcassets in Resources */,
+				DB094D961CB5765B00ED9E84 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB094D9F1CB5765B00ED9E84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB094DAA1CB5765B00ED9E84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2EC0F81383374556607F66A6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-women-tech-app/Pods-women-tech-app-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39498D9C35A06D70C0132ADB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F0E6279D790E8A06C686C77E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-women-tech-app/Pods-women-tech-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB094D891CB5765B00ED9E84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB094D931CB5765B00ED9E84 /* ViewController.swift in Sources */,
+				DB094D911CB5765B00ED9E84 /* AppDelegate.swift in Sources */,
+				DBDBB42D1CC00051008B7C17 /* ConvertTime.swift in Sources */,
+				DBDBB42A1CBFE9F9008B7C17 /* MeetupCustomTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB094D9D1CB5765B00ED9E84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB094DA61CB5765B00ED9E84 /* women_tech_appTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB094DA81CB5765B00ED9E84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB094DB11CB5765B00ED9E84 /* women_tech_appUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB094DA31CB5765B00ED9E84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB094D8C1CB5765B00ED9E84 /* women-tech-app */;
+			targetProxy = DB094DA21CB5765B00ED9E84 /* PBXContainerItemProxy */;
+		};
+		DB094DAE1CB5765B00ED9E84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB094D8C1CB5765B00ED9E84 /* women-tech-app */;
+			targetProxy = DB094DAD1CB5765B00ED9E84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB094D941CB5765B00ED9E84 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB094D951CB5765B00ED9E84 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB094D991CB5765B00ED9E84 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB094D9A1CB5765B00ED9E84 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB094DB31CB5765B00ED9E84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB094DB41CB5765B00ED9E84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB094DB61CB5765B00ED9E84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E457AA7194CEB876EC319C56 /* Pods-women-tech-app.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "women-tech-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.laurencaponong.women-tech-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DB094DB71CB5765B00ED9E84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F1C5C0D165473327866C8BB /* Pods-women-tech-app.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "women-tech-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.laurencaponong.women-tech-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DB094DB91CB5765B00ED9E84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "women-tech-appTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.laurencaponong.women-tech-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/women-tech-app.app/women-tech-app";
+			};
+			name = Debug;
+		};
+		DB094DBA1CB5765B00ED9E84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "women-tech-appTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.laurencaponong.women-tech-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/women-tech-app.app/women-tech-app";
+			};
+			name = Release;
+		};
+		DB094DBC1CB5765B00ED9E84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "women-tech-appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.laurencaponong.women-tech-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "women-tech-app";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		DB094DBD1CB5765B00ED9E84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "women-tech-appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.laurencaponong.women-tech-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "women-tech-app";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB094D881CB5765B00ED9E84 /* Build configuration list for PBXProject "women-tech-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB094DB31CB5765B00ED9E84 /* Debug */,
+				DB094DB41CB5765B00ED9E84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB094DB51CB5765B00ED9E84 /* Build configuration list for PBXNativeTarget "women-tech-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB094DB61CB5765B00ED9E84 /* Debug */,
+				DB094DB71CB5765B00ED9E84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB094DB81CB5765B00ED9E84 /* Build configuration list for PBXNativeTarget "women-tech-appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB094DB91CB5765B00ED9E84 /* Debug */,
+				DB094DBA1CB5765B00ED9E84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB094DBB1CB5765B00ED9E84 /* Build configuration list for PBXNativeTarget "women-tech-appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB094DBC1CB5765B00ED9E84 /* Debug */,
+				DB094DBD1CB5765B00ED9E84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB094D851CB5765B00ED9E84 /* Project object */;
+}

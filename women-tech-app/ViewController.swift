@@ -10,20 +10,20 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
+private var meetupAPIKey = "54b105038523dd287127805f797637"
+let textCellIdentifier = "cellIdentifier"
+
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
-   
-    let meetupAPIKey = "54b105038523dd287127805f797637"
-    let textCellIdentifier = "cellIdentifier"
+
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var meetupResultsTableView: UITableView!
     var arrayResponse = []
     var userZipCode = "10016"
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        searchBar.delegate = self
-        meetupResultsTableView.delegate = self
-        meetupResultsTableView.dataSource = self
+        setDelegateAndDSource()
         getJSONData()
         
         // Register custom cell
@@ -31,33 +31,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         meetupResultsTableView.registerNib(nib, forCellReuseIdentifier: "cellIdentifier")
         
         self.navigationController?.navigationBar.topItem?.title = "Meetups"
-                
     }
     
     
-    func getJSONData() {
-        
-            Alamofire.request(.GET, "https://api.meetup.com/2/open_events?&sign=true&photo-host=public&zip=\(userZipCode)&text_format=plain&text=women+woman+girls+girl&category=34&page=20&desc=true&key=\(meetupAPIKey)") .responseJSON {
-                response in
-            
-            switch response.result {
-
-                case .Success:
-                    if let value = response.result.value {
-                        let json = JSON(value)
-                        if let meetups = json["results"].arrayObject {
-                            self.arrayResponse = meetups as! [[String:AnyObject]]
-//                            print(self.arrayResponse)
-                            self.meetupResultsTableView.reloadData()
-                        } else {
-                            print("Parsing error")
-                        }
-                    }
-                    
-                case .Failure(let error):
-                    print(error)
-                }
-        }
+    func setDelegateAndDSource() {
+        searchBar.delegate = self
+        meetupResultsTableView.delegate = self
+        meetupResultsTableView.dataSource = self
     }
     
     
@@ -67,8 +47,34 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.meetupResultsTableView.reloadData()
     }
     
+    
+//# MARK: - Networking
+    
+    func getJSONData() {
+        Alamofire.request(.GET, "https://api.meetup.com/2/open_events?&sign=true&photo-host=public&zip=\(userZipCode)&text_format=plain&text=women+woman+girls+girl&category=34&page=20&desc=true&key=\(meetupAPIKey)") .responseJSON {
+            response in
+            
+            switch response.result {
+                
+            case .Success:
+                if let value = response.result.value {
+                    let json = JSON(value)
+                    if let meetups = json["results"].arrayObject {
+                        self.arrayResponse = meetups as! [[String:AnyObject]]
+                    } else {
+                        print("Parsing error")
+                    }
+                }
+                
+            case .Failure(let error):
+                print(error)
+            }
+        }
+    }
 
 
+    
+    
 //# MARK: - Table view methods
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -102,17 +108,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         formatter.timeStyle = .LongStyle
         
         let timeAsInt = data["time"] as! Int
-        print("epoch time is: \(timeAsInt)")
         
         let timeAsInterval: NSTimeInterval = Double(timeAsInt)/10000
         let convertedDate = NSDate(timeIntervalSinceReferenceDate:timeAsInterval)
-        print("converted date :\(convertedDate) \n")
         
-//        let dateInNSDateFormat = NSDate(timeIntervalSinceNow: dateOfMeetupInSeconds)
-//        print("ns formatted date: \(dateInNSDateFormat) \n")
-        
-//        let convertedDate = formatter.stringFromDate(dateInNSDateFormat)
         cell.dateLabel?.text = String(convertedDate)
+        
         return cell
     }
     
