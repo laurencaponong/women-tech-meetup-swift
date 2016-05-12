@@ -1,3 +1,3 @@
 #Women in Tech Meetup App
 
-* Uses the Alamofire, SwiftyJSON
+* Uses the Alamofire, SwiftyJSON cocoapods
